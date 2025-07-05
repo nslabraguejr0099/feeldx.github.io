@@ -1,4 +1,4 @@
-var app_url = 'http://localhost/apps/feeldx/';
+const app_url = 'http://localhost/apps/feeldx/';
 
 const route = (event) => {
     event = event || window.event;
@@ -11,14 +11,12 @@ console.log(event.target.href);
 const routes = {
     404:     "pages/404.html",
     "":      "pages/index.html",
-    "index": "pages/index.html",
     "about": "pages/about.html",
     "lorem": "pages/lorem.html",
 };
 
 const handleLocation = async () => {
-    const path = window.location.href.replace(app_url, '');
-console.log(path);
+    const path = window.location.pathname;
     const route = routes[path] || routes[404];
     const html = await fetch(route).then((data) => data.text());
     document.getElementById("main-page").innerHTML = html;
