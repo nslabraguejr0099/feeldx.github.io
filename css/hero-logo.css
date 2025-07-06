@@ -1,0 +1,101 @@
+
+@keyframes logo-outer {
+    from {
+        height: 500%;
+        -ms-transform:     translate(-50%, -50%) rotate(0);
+        -webkit-transform: translate(-50%, -50%) rotate(0);
+        transform:         translate(-50%, -50%) rotate(0);
+    }
+    to {
+        height: 100%;
+        -ms-transform:     translate(-50%, -50%) rotate(-45deg);
+        -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+        transform:         translate(-50%, -50%) rotate(-45deg);
+    }
+}
+
+@keyframes logo-border {
+    from {
+        top: 150%;
+        -ms-transform: translate(-50%, -50%) rotate(0);
+        -webkit-transform: translate(-50%, -50%) rotate(0);
+        transform: translate(-50%, -50%) rotate(0);
+    }
+    to {
+        top: 50%;
+        -ms-transform: translate(-50%, -50%) rotate(-45deg);
+        -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}
+@keyframes logo {
+    0% { height: 0; }
+    40% { height: 0; }
+    100% { height: 90%; }
+}
+@keyframes logo-img-left {
+    from { margin-left: 5%; }
+    to   { margin-left: 0; }
+}
+@keyframes logo-img-right {
+    from { margin-left: -5%; }
+    to   { margin-left: 0; }
+}
+
+.logo-img-left {
+    animation: logo-img-left 3s ease-out;
+}
+.logo-img-right {
+    animation: logo-img-right 3s ease-out;
+}
+
+.logo-diamond-outer {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #f2f2f0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%) rotate(-45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    overflow: hidden;
+    animation: logo-outer 1.3s ease-out;
+}
+.logo-diamond-border {
+    height: 95%;
+    aspect-ratio: 1 / 1;
+    background-color: #f2f2f0;
+    border: 1px solid black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%) rotate(-45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    overflow: hidden;
+    animation: logo-border 1.3s ease-out;
+}
+.logo-diamond {
+    height: 90%;
+    aspect-ratio: 1 / 1;
+    /* background-color: #f2f2f0; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%) rotate(-45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    overflow: hidden;
+    animation: logo 1.3s ease-out;
+}
+.logo-diamond-pic {
+    width: auto;
+    height: 141%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
