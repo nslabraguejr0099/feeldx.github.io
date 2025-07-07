@@ -1,5 +1,4 @@
-// var app_url = 'https://nslabraguejr0099.github.io/feeldx.github.io/';
-var app_url = 'http://localhost/apps/feeldx/';
+var app_url = 'https://nslabraguejr0099.github.io/feeldx.github.io/';
 
 const route = (event) => {
     event = event || window.event;
